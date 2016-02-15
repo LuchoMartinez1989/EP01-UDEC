@@ -1,0 +1,87 @@
+//Calcular Area de un circulo
+
+//opcion 1
+var radio =4;
+var Area = (Math.PI*(radio*radio));
+Area;
+
+//opcion 2
+var radio =4;
+var Area = (Math.PI*(Math.pow(radio,2)));
+Area;
+
+
+// Calcular area de un triangulo
+
+var base =2;
+var altura =2;
+var area = (base*altura)/2;
+area;
+
+//Calcular area de un Cuadrado
+var lado =4;
+var Area = (Math.pow(lado,2));
+Area;
+
+//dado un string contar el numero de vocales sin acento que contiene  dado un string contar elk numero de consonantes
+
+var palabraVector = [];
+var Palabra = "holaaaaáí";
+var canvocales = 0;
+var canConsonantes= 0;
+var canacento =0;
+for (var i = 0; i < Palabra.length ; i++){
+  var letra = Palabra.charAt(i);
+  palabraVector[i]=letra;
+  if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u" ){
+    canvocales++;
+  }if (letra == "á" || letra == "é" || letra == "í" || letra == "ó" || letra == "ú" ){
+    canacento++;
+  }
+  
+    else{
+      canConsonantes++;
+    }
+  }
+  
+  console.log("la cantidad de vocales es " + canvocales  );
+    console.log("la cantidad de vocales con acento es " +canacento);
+    console.log("la cantidad de consonanes es " +canConsonantes);
+    
+
+
+
+//escribir un script que dado el numero diga si es un numero capicua 
+
+var numeroVector = [];
+
+var num2=0;
+var numero = 12321;
+var resultado ="";
+for (var i = 0; i < numero.length ; i++){
+  var num = numero.charAt(i);
+  numeroVector[i]=num;
+  numeroVector[i];
+  
+
+  }
+  
+num2 =numeroVector.lenght-1;
+var a = 0;
+var capicua =0;
+do {
+a++;
+num2--;
+capicua++;
+
+}while (numeroVector[a] == numeroVector[num2] && a <= numeroVector.lenght-1 )
+
+
+if (capicua == numeroVector.length-1){
+  resultado = "capicua";
+}
+
+  else{
+    resultado = "no capicua";
+  }
+  console.log("" +resultado);
